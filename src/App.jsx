@@ -10,7 +10,6 @@ function App() {
 
   const key = "f7b894bff44fb2729cd01bacffb56c0e";
   
-
   async function loadData(){
 
       var input = document.getElementById("titulo");
