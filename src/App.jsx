@@ -155,6 +155,8 @@ function App() {
       .then(response => response.json())
       .catch(err => console.error(err));
 
+    var divMãe = document.querySelector(".filmesPopulares");
+
     console.log(data)
 
     while (divMãe.firstChild) {
@@ -287,7 +289,7 @@ function App() {
       <div className="pesquisa">
         <h3>Pesquise um filme</h3>
         <input type="text" name="titulo" id="titulo" placeholder="Digite o nome do filme"></input>
-        <button type="button" onClick={loadData} className="btn"><p>Pesquisar</p></button>
+        <button type="button" onClickCapture={loadData} className="btn"><p>Pesquisar</p></button>
 
       </div>
 
