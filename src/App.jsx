@@ -22,6 +22,10 @@ function App() {
       
       var resultados = document.querySelector(".resultado");
       var divMãe = document.querySelector(".filmesPopulares");
+
+      console.log(resultados);
+      console.log(divMãe);
+
       divMãe.classList.remove("load");
       resultados.classList.add("load");
 
