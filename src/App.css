@@ -1,0 +1,148 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logoSite{
+
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  
+  position: relative;
+  top: 0;
+
+}
+
+.Box{
+
+display: flex;
+flex-direction: row;
+
+}
+
+.Box h3{
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.filmesPopulares,.resultado{
+
+  display: none;
+
+}
+
+.filmesPopulares.load,.resultado.load{
+
+  display: block;
+
+}
+
+
+.caixaInd{
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.caixaInd{
+
+  display: flex;
+  flex-direction: column;
+  max-width: 18%;
+  padding: 1% 1%;
+
+}
+
+.caixaInd .pTítulo{
+
+  margin: 0;
+
+}
+
+.caixaInd img{
+
+  height: 345.6px;
+  margin: 0 1%;
+
+} 
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.resultado li img{
+  margin: auto 0 auto 1%;
+  height: 18vw;
+  width: 12vw;
+  margin-right: 2%;
+  padding-top: 1%;
+  
+
+}
+
+.resultado li {
+  
+  display: flex;
+
+}
+
+.resultado a{
+
+  color: white;
+  text-decoration: underline solid 1px;
+  padding: 0.6% 0 1%;
+
+}
+
+.resultado a:hover{
+
+  color: cyan;
+
+}
+
+#volta{
+
+    margin-top: 1%;
+
+}
+
