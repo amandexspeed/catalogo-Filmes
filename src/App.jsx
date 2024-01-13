@@ -9,18 +9,19 @@ function App() {
   const [count, setCount] = useState(0)
 
   const key = "f7b894bff44fb2729cd01bacffb56c0e";
-  var resultados = document.querySelector(".resultado");
-  var divMãe = document.querySelector(".filmesPopulares");
+  
 
   async function loadData(){
 
-      var name = document.getElementById("titulo").value;
+      var input = document.getElementById("titulo");
+      var name = input.value
       var list = document.getElementById("lista");
       console.log(document.getElementById("lista"));
 
       var data = await fetch(`https://api.themoviedb.org/3/search/movie?query=${name}&language=pt-BR&api_key=${key}`).then(Response=>Response.json());
       
-      
+      var resultados = document.querySelector(".resultado");
+      var divMãe = document.querySelector(".filmesPopulares");
       divMãe.classList.remove("load");
       resultados.classList.add("load");
 
@@ -289,7 +290,7 @@ function App() {
       <div className="pesquisa">
         <h3>Pesquise um filme</h3>
         <input type="text" name="titulo" id="titulo" placeholder="Digite o nome do filme"></input>
-        <button type="button" onClickCapture={loadData} className="btn"><p>Pesquisar</p></button>
+        <button type="button" onClick={loadData} className="btn"><p>Pesquisar</p></button>
 
       </div>
 
@@ -301,7 +302,8 @@ function App() {
       <div className="resultado">
 
         <button type="button" id='volta' onClick={function toggle(){ 
-
+          var resultados = document.querySelector(".resultado");
+          var divMãe = document.querySelector(".filmesPopulares");
           divMãe.classList.toggle("load");
           resultados.classList.toggle("load");
 
