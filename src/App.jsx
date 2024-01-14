@@ -25,8 +25,8 @@ function App() {
       console.log(resultados);
       console.log(divMãe);
 
-      /* divMãe.classList.remove("load");
-      resultados.classList.add("load"); */
+      divMãe.classList.remove("load");
+      resultados.classList.add("load"); 
 
       while (list.firstChild) {
 
