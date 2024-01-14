@@ -15,15 +15,11 @@ function App() {
       var input = document.getElementById("titulo");
       var name = input.value
       var list = document.getElementById("lista");
-      console.log(document.getElementById("lista"));
 
       var data = await fetch(`https://api.themoviedb.org/3/search/movie?query=${name}&language=pt-BR&api_key=${key}`).then(Response=>Response.json());
       
       var resultados = document.querySelector(".resultado");
       var divMãe = document.querySelector(".filmesPopulares");
-
-      console.log(resultados);
-      console.log(divMãe);
 
       divMãe.classList.remove("load");
       resultados.classList.add("load"); 
