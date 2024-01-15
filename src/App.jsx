@@ -134,11 +134,14 @@ function App() {
 
   }
 
-  /* document.getElementById('titulo').addEventListener('keydown', function(event) {
+
+function enter(titulo){
+  titulo.addEventListener('keydown', function(event) {
       if (event.keyCode === 13) {
           loadData();
       }
-  }); */
+  }); 
+}
 
   async function filmesPopulares(){
 
@@ -288,9 +291,8 @@ function App() {
 
       <div className="pesquisa">
         <h3>Pesquise um filme</h3>
-        <input type="text" name="titulo" id="titulo" placeholder="Digite o nome do filme"></input>
+        <input type="text" name="titulo" id="titulo" onKeyDown={('keydown', event => {if (event.keyCode === 13) {loadData();} })}  placeholder="Digite o nome do filme"></input>
         <button type="button" onClick={loadData} className="btn"><p>Pesquisar</p></button>
-
       </div>
 
       <div className='filmesPopulares load' >

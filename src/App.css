@@ -146,3 +146,13 @@ flex-direction: row;
 
 }
 
+#titulo{
+
+  padding: 0.5%;
+
+}
+
+::-webkit-input-placeholder {
+  color: rgb(204, 202, 202);
+}
+
